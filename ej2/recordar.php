@@ -12,7 +12,7 @@
     //     unset($_SESSION['passUser']);
     //     session_destroy();
     // }
-    if (isset($_COOKIE['user'])&& !empty($_COOKIE['user'])){
+    if (isset($_COOKIE['user']) && !empty($_COOKIE['user'])){
         echo "Hola ".$_COOKIE['user']."!";
     }
     
