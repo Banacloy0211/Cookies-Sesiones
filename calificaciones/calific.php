@@ -16,7 +16,7 @@
         $not1 = $_POST['nota1'];
         $not2 = $_POST['nota2'];
         $not3 = $_POST['nota3'];
-        $media = round(($not1 + $not2 + $not3)/3,1);
+        $media = round(($not1 + $not2 + $not3)/3);
         $arrayAlumn = array(
             'nombre' => $nombre,
             'nota1' => $not1,

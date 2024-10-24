@@ -20,9 +20,10 @@
     </form>
     <h1>Lista alumnos</h1>
     <?php
+        echo "<table border=2px>";
+        echo "<tr><th>Nombre</th><th>Primera</th><th>Segunda</th><th>Tercera</th><th>Media</th></tr>";
         if(isset($_SESSION['listaAlumn']) && count($_SESSION['listaAlumn'])>0){
-            echo "<table border=2px>";
-            echo "<tr><th>Nombre</th><th>Primera</th><th>Segunda</th><th>Tercera</th><th>Media</th></tr>";
+            
             foreach ($_SESSION['listaAlumn'] as $alumno){
                 echo "<tr>";
                 echo "<td>{$alumno['nombre']}</td>";
